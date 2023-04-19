@@ -11,126 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        background-color: #8b9c8a;
-        font-family: "Judson", serif;
-      }
-      h1,
-      h2 {
-        text-align: center;
-      }
-      h1 {
-        font-size: 45px;
-        font-weight: 600;
-      }
-      img {
-        max-width: 100%;
-      }
-      button {
-        background-color: rgba(240, 255, 255, 0.712);
-        border: 1px solid #8b9c8a;
-        border-radius: 6px;
-        display: block;
-        font-family: "Judson", serif;
-        font-size: 24px;
-        margin: 20px auto;
-        padding: 10px 15px;
-        transition: all 150ms ease-in-out;
-      }
-      button:hover {
-        background-color: #8b9c8a;
-        cursor: pointer;
-      }
-      p {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.5;
-      }
-      a {
-        color: #173034;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-      button a {
-        text-decoration: none;
-      }
-      .theme-button {
-        background-color: #173034;
-        color: #8b9c8a;
-        font-size: 10px;
-        padding: 5px 8px;
-      }
-      .theme-button:hover,
-      .about-button:hover {
-        background-color: #8b9c8a;
-        border: 1px solid #173034;
-        color: #173034;
-      }
-      .backpacking-intro-picture {
-        transition: all 150ms ease-in-out;
-      }
-      .backpacking-intro-picture:hover {
-        filter: contrast(50%);
-        transform: scale(1.2);
-      }
-      .container {
-        background-image: url("https://secure.img1-cg.wfcdn.com/im/71197879/resize-h800-w800%5Ecompr-r85/1580/158093763/Geometric+Wallpaper.jpg");
-        background-color: rgba(240, 255, 255, 0.712);
-        border-radius: 10px;
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 30px 40px;
-      }
-      .content {
-        background-color: #fffffb7c;
-        border-radius: 10px;
-        max-width: 100%;
-      }
-      .grid {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(4, 1fr);
-      }
-      .grid img {
-        transition: all 150ms ease-in-out;
-        width: 100%;
-      }
-      .grid img:hover {
-        transform: scale(1.2);
-      }
-
-      footer {
-        font-size: 18px;
-        margin: 10px 0;
-        text-align: center;
-      }
-      .dark {
-        background-color: #173034;
-      }
-      .dark a {
-        color: #8b9c8a;
-      }
-      .dark .container {
-        background-color: #0e1d1f;
-        background-image: none;
-        color: #8b9c8a;
-      }
-      .dark .content {
-        background-color: #0e1d1f;
-      }
-      .dark button {
-        background-color: #173034;
-        color: #8b9c8a;
-      }
-      .dark .about-button:hover {
-        color: #173034;
-      }
-      .dark footer {
-        color: #8b9c8a;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <button class="theme-button">Dark Theme</button>
@@ -198,19 +79,6 @@
       >
       with HTML, CSS and JavaScript
     </footer>
-    <script>
-      function darkTheme() {
-        let body = document.querySelector("body");
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-          document.querySelector(".theme-button").innerHTML = "Dark Theme";
-        } else {
-          body.classList.add("dark");
-          document.querySelector(".theme-button").innerHTML = "Light Theme";
-        }
-      }
-      let themeButton = document.querySelector(".theme-button");
-      themeButton.addEventListener("click", darkTheme);
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
