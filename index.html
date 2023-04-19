@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackPacking Hiking | My Hobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #8b9c8a;
+        font-family: "Judson", serif;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 45px;
+        font-weight: 600;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        background-color: rgba(240, 255, 255, 0.712);
+        border: 1px solid #8b9c8a;
+        border-radius: 6px;
+        display: block;
+        font-family: "Judson", serif;
+        font-size: 24px;
+        margin: 20px auto;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: #8b9c8a;
+        cursor: pointer;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      a {
+        color: #173034;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      button a {
+        text-decoration: none;
+      }
+      .theme-button {
+        background-color: #173034;
+        color: #8b9c8a;
+        font-size: 10px;
+        padding: 5px 8px;
+      }
+      .theme-button:hover,
+      .about-button:hover {
+        background-color: #8b9c8a;
+        border: 1px solid #173034;
+        color: #173034;
+      }
+      .backpacking-intro-picture {
+        transition: all 150ms ease-in-out;
+      }
+      .backpacking-intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+      }
+      .container {
+        background-image: url("https://secure.img1-cg.wfcdn.com/im/71197879/resize-h800-w800%5Ecompr-r85/1580/158093763/Geometric+Wallpaper.jpg");
+        background-color: rgba(240, 255, 255, 0.712);
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px 40px;
+      }
+      .content {
+        background-color: #fffffb7c;
+        border-radius: 10px;
+        max-width: 100%;
+      }
+      .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .grid img {
+        transition: all 150ms ease-in-out;
+        width: 100%;
+      }
+      .grid img:hover {
+        transform: scale(1.2);
+      }
+
+      footer {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .dark {
+        background-color: #173034;
+      }
+      .dark a {
+        color: #8b9c8a;
+      }
+      .dark .container {
+        background-color: #0e1d1f;
+        background-image: none;
+        color: #8b9c8a;
+      }
+      .dark .content {
+        background-color: #0e1d1f;
+      }
+      .dark button {
+        background-color: #173034;
+        color: #8b9c8a;
+      }
+      .dark .about-button:hover {
+        color: #173034;
+      }
+      .dark footer {
+        color: #8b9c8a;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark Theme</button>
+    <div class="container">
+      <div class="content">
+        <h1>Back Packing Hiking</h1>
+        <h2>One of my favorite hobby</h2>
+        <a
+          href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html"
+          target="_blank"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="Friend Backpakcing in Mountains"
+            class="backpacking-intro-picture"
+          />
+        </a>
+        <div class="grid">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/545/original/women-backpacking.jpg?1677005285"
+            alt="Women BackPacking"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/544/original/alpine-flower.jpg?1677005256"
+            alt="Alpine Flower"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/546/original/view-in-tent.jpg?1677005313"
+            alt="Morning View From Tent"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1629366961667-6c232190f6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="Friends Having coffe,watching sunrise by their tent"
+          />
+        </div>
+        <p>
+          Backpacking is the outdoor recreation of carrying gear on one's back,
+          while hiking for more than a day. It is often an extended journey, and
+          may involve camping outdoors. In North America tenting is common,
+          where simple shelters and mountain huts, widely found in Europe, are
+          rare.
+          <br />
+          Source:
+          <a
+            href="https://en.wikipedia.org/wiki/Backpacking_(hiking)"
+            target="_blank"
+            >Wikipedia</a
+          >
+        </p>
+        <button class="about-button">
+          <a
+            href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html"
+            target="_blank"
+            >Learn About BackPack Hiking</a
+          >
+        </button>
+      </div>
+    </div>
+    <footer>
+      Coded by
+      <a
+        href="https://famous-hummingbird-814245.netlify.app/index.html"
+        target="_blank"
+        >Marie-Josée Dubé</a
+      >
+      with HTML, CSS and JavaScript
+    </footer>
+    <script>
+      function darkTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+          document.querySelector(".theme-button").innerHTML = "Dark Theme";
+        } else {
+          body.classList.add("dark");
+          document.querySelector(".theme-button").innerHTML = "Light Theme";
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", darkTheme);
+    </script>
+  </body>
+</html>
